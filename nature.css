@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: arial;
+}
+
+.welcome h3{
+  text-align: center;
+  height: 60px;
+  background-color: red;
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  z-index: 1;
+
+}
+.welcome p{
+  color: white;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+.ima img {
+  width: 100%;
+  height: 630px;
+}
+.logo img {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+.there h3{
+  text-align: center;
+  border: 1px solid green;
+  font-size: 1.9em;
+}
+.there ul {
+  border: 1px solid green;
+  background-color: green;
+  text-align: center;
+  height: 50px;
+}
+.there li{
+  display: inline;
+  font-size:20px ;
+  white-space: nowrap;
+  line-height: 50px;
+  text-decoration: none;
+  word-spacing: 10px;
+}
+.aarticle  h2{
+  margin: 30px;
+  text-align: center;
+  color: greenyellow;
+  font-size: 34px;
+}
+.aarticle p {
+  color: blue;
+  margin: 20px;
+}
+.act h3 {
+  margin: 20px;
+  font-size: 34px;
+  text-align: center;
+}
+.act p {
+  color: blue;
+  margin: 20px;
+}
+
+.related h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+.pic {
+  text-align: center;
+  margin: 50px 0;
+}
+.pic li {
+  width: 30%;
+  display: inline-block;
+ 
+}
+.pic li img {
+  max-width: 100%;
+  margin: 0px 20px;
+}
+.below {
+  background-color: #1212b8c2;
+  height: 130px
+}
+.below h2{ 
+  text-align: center;
+  line-height: 30px;
+  margin: 20;
+}
+.below p {
+  text-align: center;
+  margin: 20px;
+  font-size: 23px;
+}
+a:link {
+  color: red;
+}
