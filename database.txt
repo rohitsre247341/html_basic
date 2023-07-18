@@ -1,0 +1,22 @@
+mysql> create database bookstore;
+mysql> create table authors(id int not null,name varchar(23),birth_year int,country varchar(23),primary key(id));
+mysql> insert into authors (id,name,birth_year,country)
+    -> values (1,"emma",1996,"india");
+    mysql> insert into authors (id,name,birth_year,country) values (2,"aashus",1986,"india");
+    mysql> insert into authors (id,name,birth_year,country) values (3,"ershus",1983,"india");
+    mysql> insert into authors (id,name,birth_year,country) values (4,"carles",1988,"india");
+    
+    mysql> create table books (book_id int not null,title varchar(23),publication_year int , id int not null, primary key(book_id),foreign key(id)references authors(id) );
+    mysql> insert into books (book_id,title,publication_year,id)
+    -> values (1,"govt",2003,1);
+    mysql> insert into books (book_id,title,publication_year,id) values (2,"climate_change",2004,2);
+    mysql> insert into books (book_id,title,publication_year,id) values (3,"desh_duniya",2007,3);
+    mysql> insert into books (book_id,title,publication_year,id) values (4,"apna_world",2007,4);
+mysql> select title from books;
+mysql> select name , country from authors;
+mysql> select authors.name,books.publication_year from authors inner join books on authors.id = books.id;
+mysql> select authors.name ,books.title from books inner join authors on books.id = authors.id;
+mysql> select authors.name,books.publication_year from authors inner join books on authors.id = books.id where publication_year >2003 ;
+mysql> update books set title = "world_affairs", publication_year = 2008 where book_id = 3;
+mysql> update authors set name = "jerry" where id = 3;
+mysql> delete from books where title = "govt";
